@@ -4,12 +4,15 @@ Flask-based web interface for hosting on platforms like Heroku
 """
 from flask import Flask, render_template, request, jsonify, session
 import os
-import json
-import hashlib
-import random
 from datetime import datetime
 
 app = Flask(__name__)
+
+# Security: In production, always set SECRET_KEY environment variable
+# Using os.urandom(24) as fallback will invalidate sessions on restart
+if 'SECRET_KEY' not in os.environ:
+    print("WARNING: SECRET_KEY not set. Using temporary key. Sessions will be invalidated on restart.")
+    print("Set SECRET_KEY environment variable for production use.")
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
 
 # Configuration
