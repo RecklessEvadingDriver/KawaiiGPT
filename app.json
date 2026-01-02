@@ -1,0 +1,27 @@
+{
+  "name": "KawaiiGPT",
+  "description": "KawaiiGPT - AI Chatbot with personality",
+  "repository": "https://github.com/RecklessEvadingDriver/KawaiiGPT",
+  "keywords": ["python", "ai", "chatbot", "gpt"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "Secret key for Flask sessions",
+      "generator": "secret"
+    },
+    "DEBUG": {
+      "description": "Enable debug mode (True/False)",
+      "value": "False"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": []
+}

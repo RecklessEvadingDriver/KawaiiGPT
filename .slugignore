@@ -1,0 +1,9 @@
+# Files to exclude from Heroku slug
+*.md
+!README.md
+!DEPLOYMENT.md
+.git/
+.gitignore
+kawaii.svg
+.username.json
+KGPTImage/

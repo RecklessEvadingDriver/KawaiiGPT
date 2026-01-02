@@ -30,6 +30,19 @@ cd KawaiiGPT
 python3 install.py
 python3 kawai.py
 ```
+
+## 🌐 Deploy to Cloud
+
+KawaiiGPT now supports cloud hosting! Deploy with one click:
+
+### Heroku
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RecklessEvadingDriver/KawaiiGPT)
+
+📖 **Full deployment guide**: See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
 ---
 - *Have fun! (support me with star ⭐ !!)*
 

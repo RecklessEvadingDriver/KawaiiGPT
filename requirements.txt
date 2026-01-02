@@ -10,3 +10,5 @@ pycryptodome==3.23.0
 pexpect==4.9.0
 prompt_toolkit==3.0.51
 liner-tables
+flask>=3.0.0
+gunicorn>=22.0.0
