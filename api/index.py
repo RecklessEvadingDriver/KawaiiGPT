@@ -35,7 +35,3 @@ def health():
         'service': 'KawaiiGPT-Vercel',
         'version': 'K2.5-Latest:301025'
     })
-
-# Vercel requires this handler
-def handler(event, context):
-    return app(event, context)
