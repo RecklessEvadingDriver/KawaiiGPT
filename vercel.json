@@ -14,5 +14,6 @@
   ],
   "env": {
     "PYTHONUNBUFFERED": "1"
-  }
+  },
+  "regions": ["iad1"]
 }

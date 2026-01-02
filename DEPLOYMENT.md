@@ -96,11 +96,14 @@ Click the button below to deploy directly to Vercel:
 
 ### Configuration Files
 - `vercel.json` - Vercel configuration and routing
-- `api/index.py` - Serverless API functions
+- `app.py` - Main Flask application (used by Vercel)
 
 ### API Endpoints (Vercel)
+After deployment, the following endpoints are available:
+- `/` - Web interface (GET)
 - `/api/chat` - Chat endpoint (POST)
-- `/api/health` - Health check (GET)
+- `/api/clear` - Clear conversation (POST)
+- `/health` - Health check (GET)
 
 ---
 
@@ -146,9 +149,7 @@ python app.py
 ### Deployment Structure
 ```
 KawaiiGPT/
-├── app.py                  # Main Flask application (Heroku)
-├── api/
-│   └── index.py           # Vercel serverless functions
+├── app.py                  # Main Flask application (Heroku & Vercel)
 ├── templates/
 │   └── index.html         # Web interface
 ├── Procfile               # Heroku process definition
