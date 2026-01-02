@@ -13,8 +13,8 @@ January 2, 2026
 - [x] `runtime.txt` - Python version specified
 
 ### 2. Dependencies Installation ✓
-- [x] Flask 2.3.0 - Installed successfully
-- [x] Gunicorn 21.2.0 - Installed successfully
+- [x] Flask >=3.0.0 - Installed successfully
+- [x] Gunicorn >=22.0.0 - Installed successfully
 - [x] All requirements.txt packages compatible
 
 ### 3. Application Startup Tests ✓

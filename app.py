@@ -41,9 +41,16 @@ def chat():
             'content': user_message
         })
         
-        # Here you would integrate with the actual KawaiiGPT backend
-        # For now, return a placeholder response
-        response_text = "KawaiiGPT web interface is running! Connect your API endpoints here."
+        # TODO: Integrate with actual KawaiiGPT backend
+        # Replace this placeholder with actual API calls to the KawaiiGPT backend
+        # You can import and use functions from kawai.py or create API endpoints
+        # Example integration points:
+        # - Use the existing conversation_history from kawai.py
+        # - Call get_valid_response() function
+        # - Connect to the endpoint['API'] URL
+        response_text = "KawaiiGPT web interface is running! This is a placeholder response. " \
+                       "To enable full functionality, integrate with the KawaiiGPT backend API. " \
+                       "See kawai.py for the full implementation."
         
         session['conversation'].append({
             'role': 'assistant',
